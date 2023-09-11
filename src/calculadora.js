@@ -21,5 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    
+    function limpiar() {
+        document.getElementById("costoComida").value = 0;
+        document.getElementById("porcentajePropina").value = 0;
+    }
 });
