@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const botonCalcular = document.getElementById("calcular");
-    const costoComidaInput = document.getElementById("costoComida");
-    const porcentajePropinaInput = document.getElementById("porcentajePropina");
-    const resultadoPropina = document.getElementById("resultadoPropina");
-    const resultadoTotal = document.getElementById("resultadoTotal");
+    let botonCalcular = document.getElementById("calcular");
+    let costoComidaInput = document.getElementById("costoComida");
+    let porcentajePropinaInput = document.getElementById("porcentajePropina");
+    let resultadoPropina = document.getElementById("resultadoPropina");
+    let resultadoTotal = document.getElementById("resultadoTotal");
 
     botonCalcular.addEventListener("click", function () {
-        const costoComida = parseFloat(costoComidaInput.value);
-        const porcentajePropina = parseFloat(porcentajePropinaInput.value);
+        let costoComida = parseFloat(costoComidaInput.value);
+        let porcentajePropina = parseFloat(porcentajePropinaInput.value);
 
         if (!isNaN(costoComida) && !isNaN(porcentajePropina)) {
-            const propina = (costoComida * porcentajePropina) / 100;
-            const costoTotal = costoComida + propina;
+            let propina = (costoComida * porcentajePropina) / 100;
+            let costoTotal = costoComida + propina;
             
             resultadoPropina.textContent = `Propina: $${propina.toFixed(2)}`;
             resultadoTotal.textContent = `Costo Total: $${costoTotal.toFixed(2)}`;
@@ -20,4 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
             resultadoTotal.textContent = "";
         }
     });
+
+    
 });

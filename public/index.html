@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Propinas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
 
 </head>
+
 <body>
-    <script src="calculadora.js"></script>
-    <h1>Calculadora de Propinas</h1>
-    <div>
-        <label for="costoComida">Costo de la Comida:</label>
-        <input type="number" id="costoComida" placeholder="Ingrese el costo de la comida">
-    </div>
-    <div>
-        <label for="porcentajePropina">Porcentaje de Propina:</label>
-        <input type="number" id="porcentajePropina" placeholder="Ingrese el porcentaje de propina">
-    </div>
-    <button id="calcular">Calcular Propina</button>
-    <p>La propina es: <span id="resultadoPropina"></span></p>
+    
+    <article>
+        <section>
+            <h1>Calculadora de Propinas</h1>
+        </section>
+        <section>
+            <label for="costoComida">Costo de la Comida:</label>
+            <input type="number" id="costoComida" placeholder="Ingrese el costo de la comida">
+            <br>
+            <label for="porcentajePropina">Porcentaje de Propina:</label>
+            <input type="number" id="porcentajePropina" placeholder="Ingrese el porcentaje de propina">
+        </section>
+        <section>
+            <button id="calcular">Calcular Propina</button>
+            <p>La propina es: <span id="resultadoPropina"></span></p>
+            <!--<p>Total a pagar: </p><br>-->
+        </section>
+    </article>
+
+    <footer>
+        <p>Grupo 4</p>
+        <p>Facundo Vazquez, Exequiel Velazquez, Nayra Navia, Franco flores</p>
+    </footer>
+    <script src="../src/calculadora.js"></script>
 </body>
 </html>
